@@ -1,0 +1,27 @@
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+  instance:
+    preferIpAddress: true
+
+zuul:
+  routes:
+    sinistres-commands:
+      path: /commands/**
+    sinistres-querys:
+      path: /queries/**
+  debug:
+    request: true
+    response: true
+
+logging:
+    level:
+        root: INFO
+        org.springframework: INFO
+        com.netflix.niws.client.http: DEBUG
+        com.sada: DEBUG
