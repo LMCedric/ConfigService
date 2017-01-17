@@ -22,8 +22,9 @@ zuul:
     response: true
 
 logging:
-    level:
-        root: INFO
-        org.springframework: INFO
-        com.netflix.niws.client.http: DEBUG
-        com.sada: DEBUG
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.netflix.niws.client.http: DEBUG
+    com.sada: DEBUG
+  file: ./logs/gateway-service.log

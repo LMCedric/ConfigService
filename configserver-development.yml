@@ -1,3 +1,4 @@
 logging:
   level:
     root: INFO
+  file: ./logs/configserver-service.log
