@@ -11,10 +11,12 @@ eureka:
 
 zuul:
   routes:
-    sinistres-commands:
+    sinistres-command:
       path: /commands/**
-    sinistres-querys:
+    sinistres-query:
       path: /queries/**
+    sinistres-integration:
+      path: /integration/**
   debug:
     request: true
     response: true
