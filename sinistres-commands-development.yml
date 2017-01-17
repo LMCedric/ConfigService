@@ -1,0 +1,35 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+  instance:
+    preferIpAddress: true
+
+spring:
+  application:
+    exchange: sinistres.events.fanout.exchange
+    queue: sinistres.default.queue
+    databaseName: sinitres
+    eventsCollectionName: events
+    snapshotCollectionName: snapshots
+  rabbitmq:
+    hostname: localhost
+    username: test
+    password: password
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sinistres
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+      #aop: DEBUG
+      #dao: DEBUG
+      #orm: DEBUG
+      #amqp: DEBUG
+      #data: DEBUG
+      #transaction: DEBUG
+    org.axonframework: INFO
+    com.sada: DEBUG
+  file: ./logs/sinistres-commands.log
