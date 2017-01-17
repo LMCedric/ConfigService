@@ -2,4 +2,4 @@ logging:
   level:
     root: INFO
     org.springframework: INFO
-  file: ./logs/configserver-service.log
+  file: ./logs/configuration-service.log
