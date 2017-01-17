@@ -1,0 +1,24 @@
+import:
+  filesScan:
+    path: src/test/resources/inboundFiles
+    pattern: ^[^~].*\\.xlsx?$
+
+spring:
+  rabbitmq:
+    hostname: localhost
+    username: test
+    password: password
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+      #aop: DEBUG
+      #dao: DEBUG
+      #orm: DEBUG
+      #amqp: DEBUG
+      #data: DEBUG
+      #transaction: DEBUG
+    org.axonframework: INFO
+    com.soagrowers: INFO
+  file: ./logs/sinistres-integration.log
