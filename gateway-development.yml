@@ -13,10 +13,16 @@ zuul:
   routes:
     sinistres-command:
       path: /commands/**
+      serviceId: sinistres-command
+      stripPrefix: false
     sinistres-query:
       path: /queries/**
+      serviceId: sinistres-query
+      stripPrefix: false
     sinistres-integration:
       path: /integration/**
+      serviceId: sinistres-integration
+      stripPrefix: false
   debug:
     request: true
     response: true
