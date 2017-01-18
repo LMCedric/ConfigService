@@ -7,8 +7,8 @@ eureka:
 
 import:
   filesScan:
-    path: src/test/resources/inboundFiles
-    pattern: ^[^~].*\\.xlsx?$
+    path: "src/test/resources/inboundFiles"
+    pattern: "^[^~].*\\.xlsx?$"
 
 spring:
   application:
