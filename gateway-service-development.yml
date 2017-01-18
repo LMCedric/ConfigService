@@ -27,6 +27,12 @@ logging:
   level:
     root: INFO
     org.springframework: INFO
-    com.netflix.niws.client.http: DEBUG
-    com.sada: DEBUG
+      #aop: DEBUG
+      #dao: DEBUG
+      #orm: DEBUG
+      #amqp: DEBUG
+      #data: DEBUG
+      #transaction: DEBUG
+    com.netflix.niws.client.http: INFO
+    com.sada.gateway: DEBUG
   file: ./logs/gateway-service.log

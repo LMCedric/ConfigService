@@ -31,5 +31,5 @@ logging:
       #data: DEBUG
       #transaction: DEBUG
     org.axonframework: INFO
-    com.sada: DEBUG
+    com.sada.command: DEBUG
   file: ./logs/sinistres-command.log

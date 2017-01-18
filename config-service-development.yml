@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+      #aop: DEBUG
+      #dao: DEBUG
+      #orm: DEBUG
+      #amqp: DEBUG
+      #data: DEBUG
+      #transaction: DEBUG
+    com.sada.config: DEBUG
+  file: ./logs/config-service.log

@@ -27,5 +27,5 @@ logging:
       #data: DEBUG
       #transaction: DEBUG
     org.axonframework: INFO
-    com.sada.batch: INFO
+    com.sada.batch: DEBUG
   file: ./logs/sinistres-batch.log
