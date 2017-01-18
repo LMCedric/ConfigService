@@ -7,7 +7,7 @@ eureka:
 
 import:
   filesScan:
-    path: ./src/test/resources/inboundFiles
+    path: sinistres-batch/src/test/resources/inboundFiles
     pattern: "^[^~].*\\.xlsx?$"
 
 spring:
