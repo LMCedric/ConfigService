@@ -5,16 +5,17 @@ eureka:
   instance:
     preferIpAddress: true
 
-batch:
+import:
   filesScan:
     path: src/test/resources/inboundFiles
     pattern: ^[^~].*\\.xlsx?$
 
 spring:
+  application:
+    rowsCollectionName: rawLine
   data:
     mongodb:
       database: ${spring.application.name}
-        collectionName: RawLines
       host: localhost
       port: 27017
 
