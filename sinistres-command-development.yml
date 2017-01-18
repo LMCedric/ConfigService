@@ -14,8 +14,8 @@ spring:
     snapshotCollectionName: snapshots
   rabbitmq:
     hostname: localhost
-    username: test
-    password: password
+    username: cedric
+    password: sada123
   data:
     mongodb:
       uri: mongodb://localhost:27017/sinistres

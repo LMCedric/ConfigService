@@ -4,8 +4,8 @@ eureka:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
   instance:
     preferIpAddress: true
-    
-import:
+
+batch:
   filesScan:
     path: src/test/resources/inboundFiles
     pattern: ^[^~].*\\.xlsx?$
@@ -13,8 +13,8 @@ import:
 spring:
   rabbitmq:
     hostname: localhost
-    username: test
-    password: password
+    username: cedric
+    password: sada123
 
 logging:
   level:
@@ -27,5 +27,5 @@ logging:
       #data: DEBUG
       #transaction: DEBUG
     org.axonframework: INFO
-    com.soagrowers: INFO
-  file: ./logs/sinistres-integration.log
+    com.sada.batch: INFO
+  file: ./logs/sinistres-batch.log

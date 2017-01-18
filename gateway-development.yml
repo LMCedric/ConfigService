@@ -19,10 +19,6 @@ zuul:
       path: /queries/**
       serviceId: sinistres-query
       stripPrefix: false
-    sinistres-integration:
-      path: /integration/**
-      serviceId: sinistres-integration
-      stripPrefix: false
   debug:
     request: true
     response: true
