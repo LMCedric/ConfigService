@@ -11,10 +11,11 @@ batch:
     pattern: ^[^~].*\\.xlsx?$
 
 spring:
-  rabbitmq:
-    hostname: localhost
-    username: cedric
-    password: sada123
+  data:
+    mongodb:
+      database: ${spring.application.name}
+      host: localhost
+      port: 27017
 
 logging:
   level:
@@ -26,6 +27,5 @@ logging:
       #amqp: DEBUG
       #data: DEBUG
       #transaction: DEBUG
-    org.axonframework: INFO
     com.sada.batch: DEBUG
   file: ./logs/sinistres-batch.log
