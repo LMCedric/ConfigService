@@ -9,16 +9,18 @@ spring:
   application:
     exchange: sinistres.events.fanout.exchange
     queue: sinistres.default.queue
-    databaseName: sinitres
-    eventsCollectionName: events
-    snapshotCollectionName: snapshots
+    databaseName: sinitres-batch
+    eventsCollectionName: sinistresEvents
+    snapshotCollectionName: sinistresSnapshots
   rabbitmq:
     hostname: localhost
     username: cedric
     password: sada123
   data:
     mongodb:
-      uri: mongodb://localhost:27017/sinistres
+      database: ${spring.application.databaseName}
+      host: localhost
+      port: 27017
 
 logging:
   level:
