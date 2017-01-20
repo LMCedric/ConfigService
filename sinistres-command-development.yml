@@ -7,8 +7,8 @@ eureka:
 
 spring:
   application:
-    exchange: sinistres.events.fanout.exchange
-    queue: sinistres.default.queue
+    exchange: sinistres.events.fanoutExchange
+    queue: sinistres.events.queue
     databaseName: sinitres-batch
     eventsCollectionName: sinistresEvents
     snapshotCollectionName: sinistresSnapshots
@@ -16,6 +16,7 @@ spring:
     hostname: localhost
     username: cedric
     password: sada123
+    port: 5672
   data:
     mongodb:
       database: ${spring.application.databaseName}
